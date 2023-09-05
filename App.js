@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Image,ActivityIndicator} from 'react-native';
 import { TextInput } from 'react-native-web';
+// import { ButtonDos } from './componentes/ButtonDos.js';
+// import { TextoDos } from './componentes/TextoDos.js'
 
 export default function App() {
   return (
@@ -10,6 +12,8 @@ export default function App() {
       <Image style={[styles.estiloImagen1,styles.estiloImagen2]} source={{ uri: 'https://pngimg.com/uploads/github/github_PNG40.png' }}/>
       <Button title="Presioname" onPress={() => alert('Botón presionado')} style={[styles.estiloBoton1, styles.estiloBoton2]}/>
       <ActivityIndicator size="large" color="#0000ff" style={[styles.estiloIndicador1,styles.estiloIndicador2]}/>
+      {/* <ButtonDos></ButtonDos>
+      <TextoDos></TextoDos> */}
     </View>
   );
 };
